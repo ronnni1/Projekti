@@ -1,11 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Agency</title>
+  <style>
+    
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #f7f7f7;
+      color: #333;
+    }
+
+   
+    header {
+      background-color: #4e96a2;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 20px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo img {
+      margin-right: 10px;
+    }
+
+    .logo-text {
+      font-family: 'Georgia', serif;
+      font-size: 24px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+    }
+
+    nav ul li {
+      margin-right: 20px;
+    }
+
+    nav ul li:last-child {
+      margin-right: 0;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #333;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #555;
+    }
+
+   
+    .image {
+      position: relative;
+      overflow: hidden;
+      max-width: 100%;
+      
+    }
+
+    
+    /* Text box styles */
+    .text-boxes {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 50px 0;
+    }
+
+    .text-box {
+      background-color: #fff;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      width: 70%;
+    }
+
+    .text-box p {
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    
+    footer {
+      background-color: #4e96a3;
+      color: #fff;
+      text-align: center;
+      padding: 15px 0;
+    }
+
+    .social-icons {
+      margin-bottom: 10px;
+    }
+
+    .social-icons a {
+      margin-right: 10px;
+    }
+
+    .social-icons img {
+      width: 30px;
+      height: auto;
+    }
+  </style>
 </head>
 <body>
-    <p></p>
+
+<header>
+  <div class="logo">
+    <img src="logo.png" alt="Travel Logo" width="40">
+    <span class="logo-text">HereWeGo</span>
+  </div>
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+      <div class="image">
+        <img src="girl.webp" alt="Travel Destination 1">
+      </div>
+     
+  </div>
+
+  <div class="text-boxes">
+    <div class="text-box">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget sapien sit amet.</p>
+    </div>
+    <div class="text-box">
+      <p>Phasellus nec sapien at leo consectetur congue. Fusce ultrices sed metus eu cursus.</p>
+    </div>
+    <div class="text-box">
+      <p>Integer vel justo ut lacus consectetur lacinia. Nulla facilisi. Nulla nec massa in lectus.</p>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="social-icons">
+    <a href="https://www.facebook.com"><img src="facebook.png" alt="Facebook"></a>
+    <a href="https://www.instagram.com"><img src="ig.png" alt="Instagram"></a>
+  </div>
+  <p>&copy; 2023 HereWeGo Agency. All rights reserved.</p>
+</footer>
+
+<script>
+  let currentSlide = 0;
+  const slides = document.querySelectorAll('.carousel-image');
+
+  function showSlide(n) {
+    slides.forEach((slide) => {
+      slide.style.display = 'none';
+    });
+    slides[n].style.display = 'flex';
+  }
+
+  function nextSlide() {
+    currentSlide = (currentSlide + 1) % slides.length;
+    showSlide(currentSlide);
+  }
+
+  setInterval(nextSlide, 5000); // Change slide every 5 seconds (5000 milliseconds)
+</script>
+
 </body>
 </html>
