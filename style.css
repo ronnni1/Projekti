@@ -195,6 +195,7 @@
 /* Services */
 div.gallery {
 	border: 1px solid #ccc;
+	cursor: pointer;
 }
   
 div.gallery:hover {
