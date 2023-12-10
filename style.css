@@ -120,7 +120,7 @@
 .content p{
     padding-left: 50px;
     padding-right: 50px;
-    font-size: 15px;
+    font-size: 17px;
     text-align: center;
 }
 
@@ -146,7 +146,13 @@
     margin: 0;
     line-height: 1 px;
   }
-.parallax-containeri {
+  .contenti p{
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 17px;
+    text-align: center;
+}
+  .parallax-containeri {
     height: 500px; 
     background-image: url('croatia.webp');
     background-attachment: fixed;
@@ -167,6 +173,7 @@
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
+	background-color: #fee;
 }
 .footer a{
 	text-decoration: none;
@@ -180,61 +187,15 @@
 }
 .social-icons {
     display: flex;
-    justify-content: center; /* Vendos logot në qendër horizontale */
+    justify-content: center; 
+	background-color: #fee;
 }
 
 .social-icon {
-    margin: 0 5px; /* Hapësirë ndër logot e rrjeteve sociale */
+    margin: 0 5px; 
 }
 
 .social-icon img {
-    width: 30px; /* Përshtat madhësinë e ikonave sipas preferencave */
+    width: 30px;
     height: auto;
-}
-
-/* Services */
-div.gallery {
-	border: 1px solid #ccc;
-	cursor: pointer;
-}
-  
-div.gallery:hover {
-	background-color: burlywood;
-	letter-spacing: 3px;
-	transition: 0.6s;
-}
-  
-div.gallery img {
-	width: 100%;
-	height: 250px;
-}
-  
-div.desc {
-	padding: 15px;
-	text-align: center;
-}
-
-.responsive {
-	padding: 0 6px;
-	float: left;
-	width: 24.99999%;
-}
-  
-@media only screen and (max-width: 700px) {
-	.responsive {
-	  width: 49.99999%;
-	  margin: 6px 0;
-	}
-}
-  
-@media only screen and (max-width: 500px) {
-	.responsive {
-		width: 100%;
-	}
-}
-  
-.clearfix:after {
-	content: "";
-	display: table;
-	clear: both;
 }
