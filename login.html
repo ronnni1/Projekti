@@ -29,6 +29,25 @@
         </div>
       </form>
     </div>
-
+    <script>
+      function validateForm(event) {
+        event.preventDefault(); 
+       
+        var username = document.querySelector('input[type="text"]').value;
+        var password = document.querySelector('input[type="password"]').value;
+  
+        
+        if (username.trim() === '' || password.trim() === '') {
+          alert('Ju lutem plotësoni të gjitha fushat!');
+        } else {
+         
+          alert('Fushat e plotësuar! Mund të vazhdoni.');
+        }
+        
+      }
+  
+      
+      document.querySelector('form').addEventListener('submit', validateForm);
+    </script>
   </body>
 </html>
