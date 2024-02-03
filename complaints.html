@@ -7,7 +7,18 @@
     <link rel="stylesheet" href="complaints.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
 </head>
+
 <body>
+    <video autoplay loop muted id="background-video">
+        <source src="background-video.mp4" type="video/mp4">
+        
+        Your browser does not support the video tag.
+    </video>
+
+   
+</body>
+</html>
+
     <div class="navbar">
 		<div class="logo">
 			<h1>WeTravel</h1>
@@ -15,7 +26,7 @@
 		<div class="menu">
 			<ul>
 				<li><a href="index.html">Home</a></li>
-				<li><a href="#">Services</a></li>
+				<li><a href="#Aboutus">About us</a></li>
 				<li><a href="places.html">Places</a></li>
 				<li><a href="Contact.html">Contact us</a></li>
 				
@@ -27,7 +38,7 @@
 	</div>
     <div class="background-video">
         <video autoplay muted loop>
-            <source src="Things to do in the Maldives ｜ A cinematic travel short film.mp4" type="video/mp4">
+            <source src="1 MINUTE OF ITALY ｜ TRAVEL VIDEO.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
         <div class="welcome-message">
@@ -37,7 +48,7 @@
     </div>
 
     <div class="content">
-        <form id="complaints-form">
+        <form action="./complaints.php" method="post" id="complaints-form">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
 
@@ -51,7 +62,7 @@
             <input type="email" id="email" name="email" required>
 
             <label for="complaint">Complaint:</label>
-            <textarea id="complaint" name="complaint" rows="4" required></textarea>
+            <textarea id="complaint" name="complaints" rows="4" required></textarea>
 
             <button type="submit">Submit</button>
         </form>
@@ -59,7 +70,7 @@
    
 	<div class="footer">
 		<a href="complaints.html">Privacy Policy</a>
-		<a href="#">Cookies</a>
+		<a href="cookies.html">Cookies</a>
 		<a href="complaints.html">Complaints</a>
 	</div>
     <div class="social-icons">
